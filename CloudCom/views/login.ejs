@@ -1,0 +1,57 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"  id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cloud Computing Assignment</title>
+
+   
+	<!--Bootsrap 4 CDN-->
+	<link  type="text/css"  rel="stylesheet" href="/css/bootstrap.min.css">
+    
+    <!--Fontawesome CDN-->
+	<link rel="stylesheet" type="text/css" href="/css/all.css">
+
+	<!--Custom styles-->
+	<link type="text/css"  rel="stylesheet" href="/css/styles.css">
+	
+</head>
+<body>
+<div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header">
+				<h3 style="text-align: center;" >Sign In To Cloud Computing Assignment</h3>
+				
+				<br>
+					<h5 style="color: blueviolet;text-align: center;font-size: 0.70rem;" ><%= msg %></h5>
+
+			</div>
+			<div class="card-body">
+				<form action="auth" method="POST">
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+						<input type="text"  name="username" class="form-control" placeholder="username" required >
+						
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+						<input type="password"  name="password" class="form-control" placeholder="password" required>
+					</div>
+					<div class="form-group">
+						<input type="submit" value="Login" class="btn float-right login_btn">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
